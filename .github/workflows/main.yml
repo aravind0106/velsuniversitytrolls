@@ -27,3 +27,5 @@ jobs:
       with:
         github_token: ${{ secrets.TOKEN }}
         publish_dir: dist/webapp
+        cname: velsuniversitytrolls.in
+        commit_message: "Deploy site to GitHub Pages"
