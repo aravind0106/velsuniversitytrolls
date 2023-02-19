@@ -1,5 +1,5 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Info } from '../class/info';
@@ -12,7 +12,7 @@ import { JsonDataService } from '../service/jsondata.service';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss']
 })
-export class HomePageComponent implements OnInit{
+export class HomePageComponent implements OnInit, AfterViewInit {
   private USERNAME = 'vutadmin@gmail.com';
   private PASSWORD = 'S3cur3@123';
   private ACCESS_TOKEN: any;
@@ -43,6 +43,9 @@ export class HomePageComponent implements OnInit{
       this.isSorted = false;
 
   }
+  ngAfterViewInit(): void {
+      window.removeEventListener("resize", this.setAnimationDuration.bind(this));
+  }
 
   onSubmit(form: NgForm) {
 
@@ -61,6 +64,7 @@ export class HomePageComponent implements OnInit{
       if (data['dropbox']) {
       this.getImage();
       this.loadJsonData();
+      this.setAnimationDuration();
       }
     });
   }
@@ -75,7 +79,11 @@ export class HomePageComponent implements OnInit{
 
   setAnimationDuration() {
     const viewportWidth = window.innerWidth;
-    this.animationDuration = (((this.stringLength + 86) / 10) + (viewportWidth / 100));
+    if(this.stringLength !== undefined) {
+      this.animationDuration = (((this.stringLength + 86) / 10) + (viewportWidth / 100));
+    } else {
+      this.animationDuration = ((86 / 10) + (viewportWidth / 100));
+    }
   }
 
   loadAll() {
