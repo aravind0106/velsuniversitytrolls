@@ -1,0 +1,409 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<div class="notifications">
+  <div class="anim" [style.animation]="'my-animation ' + animationDuration + 's linear infinite'">
+    <strong>Important Updates: </strong> {{newUpdates}}
+    Please be connected with us for important updates. Thank you for your love and support
+    <mat-icon>favorite</mat-icon>
+  </div>
+</div>
+
+<div class="content toolbarimage" role="main">
+
+  <!-- Highlight Card -->
+  <img style="padding-top: 5px;" width="80" alt="VUT Logo" src="assets/images/vut.jpg" />
+
+  <!-- Resources -->
+  <div class="mainheader">
+    <h1>Vels University Trolls</h1>
+    <h2>Kindly welcomes you to VUT Family</h2>
+  </div>  
+  <p>Here are some links to help you get started:</p>
+
+  <div class="card-container">
+    <a class="card" [routerLink]="['/semester-result']">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+      </svg>
+      <span style="color: #1976d2;">Semester Result</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener"
+      href="https://erp.velsuniv.ac.in/velsonline/students/loginManager/youLogin.jsp">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-3.123 0-5.914-1.441-7.749-3.69.259-.588.783-.995 1.867-1.246 2.244-.518 4.459-.981 3.393-2.945-3.155-5.82-.899-9.119 2.489-9.119 3.322 0 5.634 3.177 2.489 9.119-1.035 1.952 1.1 2.416 3.393 2.945 1.082.25 1.61.655 1.871 1.241-1.836 2.253-4.628 3.695-7.753 3.695z" />
+      </svg>
+      <span style="color: #1976d2;">Student Login</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="http://184.95.52.42/velsonline/online/velsfeepayment.jsp">
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M15.571 3h3.866l1.563-3h-16.438l-1.562 3h4.963c2.257 0 3.759.839 4.589 2h-7.99l-1.562 3h10.279c-.266 2.071-1.975 4-4.942 4h-4.337v3c2.321 0 1.584-.553 7.324 9h4.676l-5.963-9c2.505-.396 6.496-2.415 6.92-7h2.48l1.563-3h-4.345c-.238-.707-.602-1.383-1.084-2z" />
+      </svg>
+      <span style="color: #1976d2;">Fees Payment</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="http://www.velsuniv.ac.in/college-admission-procedure.asp">
+      <svg class="material-icons" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+        clip-rule="evenodd">
+        <path
+          d="M10 23c0-1.105.895-2 2-2h2c.53 0 1.039.211 1.414.586s.586.884.586 1.414v1h-6v-1zm8 0c0-1.105.895-2 2-2h2c.53 0 1.039.211 1.414.586s.586.884.586 1.414v1h-6v-1zm-11.241-14c.649 0 1.293-.213 1.692-.436.755-.42 2.695-1.643 3.485-2.124.216-.131.495-.083.654.113l.008.011c.165.204.146.499-.043.68-.622.597-2.443 2.328-3.37 3.213-.522.499-.822 1.183-.853 1.904-.095 2.207-.261 6.912-.331 8.833-.017.45-.387.806-.837.806h-.001c-.444 0-.786-.347-.836-.788-.111-.981-.329-3.28-.426-4.212-.04-.384-.28-.613-.585-.615-.304-.001-.523.226-.549.609-.061.921-.265 3.248-.341 4.22-.034.442-.397.786-.84.786h-.001c-.452 0-.824-.357-.842-.808-.097-2.342-.369-8.964-.369-8.964l-1.287 2.33c-.14.253-.445.364-.715.26h-.001c-.279-.108-.43-.411-.349-.698l1.244-4.393c.122-.43.515-.727.962-.727h4.531zm6.241 7c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm8 0c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm3-1h-14v-2h7v-1h3v1h2v-11h-20v4.356l-2 2v-8.356h24v15zm-7-5h-3v-1h3v1zm-11.626-6c1.241 0 2.25 1.008 2.25 2.25s-1.009 2.25-2.25 2.25c-1.242 0-2.25-1.008-2.25-2.25s1.008-2.25 2.25-2.25zm14.626 4h-6v-1h6v1zm0-2h-6v-1h6v1z" />
+      </svg>
+      <span style="color: #1976d2;">Admissions</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="https://t.me/Vels_University_Trolls">
+      <svg class="material-icons" width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+        <path id="telegram-4"
+          d="M12,0c-6.626,0 -12,5.372 -12,12c0,6.627 5.374,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.628 -5.373,-12 -12,-12Zm3.224,17.871c0.188,0.133 0.43,0.166 0.646,0.085c0.215,-0.082 0.374,-0.267 0.422,-0.491c0.507,-2.382 1.737,-8.412 2.198,-10.578c0.035,-0.164 -0.023,-0.334 -0.151,-0.443c-0.129,-0.109 -0.307,-0.14 -0.465,-0.082c-2.446,0.906 -9.979,3.732 -13.058,4.871c-0.195,0.073 -0.322,0.26 -0.316,0.467c0.007,0.206 0.146,0.385 0.346,0.445c1.381,0.413 3.193,0.988 3.193,0.988c0,0 0.847,2.558 1.288,3.858c0.056,0.164 0.184,0.292 0.352,0.336c0.169,0.044 0.348,-0.002 0.474,-0.121c0.709,-0.669 1.805,-1.704 1.805,-1.704c0,0 2.084,1.527 3.266,2.369Zm-6.423,-5.062l0.98,3.231l0.218,-2.046c0,0 3.783,-3.413 5.941,-5.358c0.063,-0.057 0.071,-0.153 0.019,-0.22c-0.052,-0.067 -0.148,-0.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z" />
+      </svg>
+      <span style="color: #1976d2;">Telegram</span>
+      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+  </div>
+</div>
+
+<div style="overflow: hidden;">
+  <div class="featured">
+    <h1>INFRASTRUCTURE</h1>
+  </div>
+  <div class="sliding-background">
+  </div>
+  <div>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header style="background: #226ab1f5;">
+        <mat-panel-title class="expandTitle">
+          <svg clip-rule="evenodd" fill="white" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+            width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m16.843 10.211c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291 1.002-1.299 3.044-3.945 4.243-5.498z" />
+          </svg>
+          &nbsp;Click To Expand
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="memeExpansionPanel">
+        <div class="individualDiv">
+          <div class="contentDiv">
+            <img src="/assets/images/meme1.png" width="220" alt="vels university"/>
+            <h1 class="memeText">Aama athu enna ore oru<br> building than loop la<br> oditu iruku..?</h1>
+          </div>
+          <div class="contentDiv">
+            <h1 class="memeText">Athu onnum illa college la<br> antha oru building than<br> nalla irukum athan loop
+              <br>la oditu iruku
+            </h1>
+            <img src="/assets/images/meme2.png" width="220" alt="vels university"/>
+          </div>
+        </div>
+        <div class="individualDiv">
+          <div class="contentDiv">
+            <img src="/assets/images/meme1.png" width="220" alt="vels university"/>
+            <h1 class="memeText">ஆமா அது என்ன ஒரே ஒரு<br> பில்டிங் மட்டும் தான் <br>லூப்ல ஓடிட்டு இருக்கு ?</h1>
+          </div>
+          <div class="contentDiv">
+            <h1 class="memeText">அது ஒண்ணும் இல்ல காலேஜ்ல<br> அந்த ஒரு பில்டிங் தான்<br> நல்லா இருக்கும்,<br>
+              அதான் லூப்ல ஓடிட்டு இருக்கு</h1>
+            <img src="/assets/images/meme2.png" width="220" alt="vels university"/>
+          </div>
+        </div>
+        <div class="individualDiv">
+          <div class="contentDiv">
+            <img src="/assets/images/meme1.png" width="220" alt="vels university"/>
+            <h1 class="memeText">Why there is only one <br>building running in loop?</h1>
+          </div>
+          <div class="contentDiv">
+            <h1 class="memeText">Actually it's the only building <br>which is good in college, <br>that's why.</h1>
+            <img src="/assets/images/meme2.png" width="220" alt="vels university"/>
+          </div>
+        </div>
+      </div>
+
+
+    </mat-expansion-panel>
+  </div>
+  <br />
+</div>
+
+<div *ngIf="imageTemporaryDate.length > 0 && isSorted">
+  <div class="featured">
+    <h1>FEATURED POSTS</h1>
+  </div>
+  <div class="featuredMemes">
+    <div class="onePost" *ngFor="let imagePath of imageTemporaryDate">
+      <div><img [src]="imagePath.link" width="300" height="300" /></div>
+      <div class="downloadDiv">
+        <a class="circle-link" title="Download" [href]="imagePath.link" rel="noopener">
+          <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092zm-4 10h3v-4h2v4h3l-4 4-4-4z" />
+          </svg>
+        </a>
+        #Vels_University_Trolls
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="featured">
+    <h1>FEATURED VIDEOS</h1>
+  </div>
+  <div class="featuredMemes">
+    <youtube-player videoId="7uzX8Cc1Uc0"></youtube-player>
+
+    <iframe class="youtubeVideo" width="560" height="315" src="https://www.youtube.com/embed/7uzX8Cc1Uc0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+<div>
+  <div class="featured">
+    <h1>ABOUT US</h1>
+  </div>
+  <br>
+  <div class="aboutUs">
+    <div class="aboutUsChild">
+      <div>
+        <img src="/assets/images/Shadower.png" width="100" alt="vels university"/>
+      </div>
+      <div>
+        <h1>SHADOWER</h1>
+      </div>
+    </div>
+    <div class="aboutUsChild">
+      <div>
+        <h1>MR Z</h1>
+      </div>
+      <div>
+        <img src="/assets/images/MrZ.png" width="100" alt="vels university trolls"/>
+      </div>
+    </div>
+    <div class="aboutUsChild">
+      <div>
+        <img src="/assets/images/Tony.png" width="135" alt="vels university trolls"/>
+      </div>
+      <div>
+        <h1>TONY STARK</h1>
+      </div>
+    </div>
+    <div class="aboutUsChild">
+      <div>
+        <h1>BUBU</h1>
+      </div>
+      <div>
+        <img src="/assets/images/Bubu.png" width="93" alt="vels university trolls"/>
+      </div>
+    </div>
+
+    <div class="aboutUsChild">
+      <div>
+        <img src="/assets/images/Sparky.png" width="100" alt="vels university trolls"/>
+      </div>
+      <div>
+        <h1>SPARKY</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="featured">
+    <h1>SPECIAL THANKS</h1>
+  </div>
+  <div class="featuredMemes">
+    <div style="display: grid;">
+      <div>
+        <h1 class="specialthanks"><mat-icon>keyboard_arrow_right</mat-icon>VELS UNIVERSITY FACTS</h1>
+      </div>
+      <div>
+        <h1 class="specialthanks"><mat-icon>keyboard_arrow_right</mat-icon>KAVINAYA</h1>
+      </div>
+      <div>
+        <h1 class="specialthanks"><mat-icon>keyboard_arrow_right</mat-icon>VIPER</h1>
+      </div>
+      <div>
+        <h1 class="specialthanks"><mat-icon>keyboard_arrow_right</mat-icon>HEISENBERG</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="featured">
+    <h1>ADMINS PORTAL</h1>
+  </div>
+  <div class="featuredMemes" style="justify-content: center;">
+    <div class="container">
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" class="loginFormCss">
+        <div>
+            <h1 style="color: white;">ADMIN LOGIN</h1>
+        </div>
+        <div>
+          <input class="inputfield" type="text" id="username" name="username" [(ngModel)]="username" required placeholder="Username">
+        </div>
+        <div>
+          <input class="inputfield" type="password" id="password" name="password" [(ngModel)]="password" required placeholder="Password">
+        </div>
+        <div *ngIf="loginForm.submitted && !loginForm.controls[password] && showLoginErr">
+        <strong style="color: red;">*Invalid Credentials</strong>
+        </div>
+      <div>
+        <button mat-raised-button class="loginButton" type="submit" [disabled]="!loginForm.valid">LOGIN</button>
+      </div>
+      </form>      
+    </div>
+  </div>
+  <div *ngIf="displayAdminsMenu" style="display: flex;justify-content: center;">
+    <mat-list>
+
+      <div mat-subheader>Info Messages</div>
+      <mat-list-item *ngFor="let element of infoDetails">
+        <div class="infoDiv">
+          <div>
+            <button mat-icon-button (click)="deleteJsonData(element)"><mat-icon>delete</mat-icon></button>
+          </div>
+          <div>{{element.message}}</div>
+        </div>
+      </mat-list-item>
+
+      <mat-divider></mat-divider>
+
+      <div mat-subheader>Add Info Message</div>
+      <div>
+        <div>
+          <mat-form-field>
+            <mat-label>Info Message</mat-label>
+            <input matInput type="text" [(ngModel)]="infoMessage">
+            <button *ngIf="infoMessage" matSuffix mat-icon-button aria-label="vels university"
+              (click)="updateJsonData(infoMessage)" [disabled]="isSaving">
+              <mat-icon>save</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <div>{{infoMessage}}</div>
+      </div>
+    </mat-list>
+  </div>
+</div>
+
+<div>
+  <div class="featured">
+    <h1>PHOTOGRAPHY</h1>
+  </div>
+  <div class="featuredMemes" style="justify-content: center;">
+      <div>
+        <img src="/assets/contest/contest.png" width="300" alt="vels university">
+      </div>
+  </div>
+</div>
+
+<div class="googleMap">
+  <div class="bottomGrid">
+    <div>
+      <h1>FOLLOW US ON</h1>
+    </div>
+    <div>
+      <img src="/assets/images/crew.png" width="350" alt="vels university trolls"/>
+    </div>
+    <div class="card-container" style="margin-top: 0px;">
+      <a class="circle-link" title="Instagram" href="https://www.instagram.com/vels_university_trolls/" target="_blank"
+        rel="noopener">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+          <title>Instagram</title>
+        </svg>
+      </a>
+
+      <a class="circle-link" title="Youtube" href="https://youtube.com/c/velsuniversitytrolls" target="_blank"
+        rel="noopener">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.441 16.892c-2.102.144-6.784.144-8.883 0-2.276-.156-2.541-1.27-2.558-4.892.017-3.629.285-4.736 2.558-4.892 2.099-.144 6.782-.144 8.883 0 2.277.156 2.541 1.27 2.559 4.892-.018 3.629-.285 4.736-2.559 4.892zm-6.441-7.234l4.917 2.338-4.917 2.346v-4.684z" />
+          <title>Youtube</title>
+        </svg>
+      </a>
+      <a class="circle-link" target="_blank" rel="noopener" href="https://m.facebook.com/VelsUniversityTrolls/"
+        title="Facebook">
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="bottomGrid">
+    <div>
+      <h2>CONTACT</h2>
+    </div>
+    <div>
+      <p>crewvut@gmail.com</p>
+      <br>
+      <h2>OFFICIAL DETAILS</h2>
+      <p><strong>PHONE: </strong> + 91 - 44 - 2266 2500 / 2501 / 2502 / 2503</p>
+      <p><strong>ADDRESS: </strong>Vels Institute of Science, Technology & Advanced Studies (VISTAS),<br>
+        PV Vaithiyalingam Rd, Velan Nagar,
+        Krishnapuram, Pallavaram,<br> Chennai, Tamil Nadu 600117</p>
+    </div>
+  </div>
+
+  <div class="bottomGrid">
+    <div>
+      <h2>LOCATION</h2>
+    </div>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2233857160422!2d80.15766751482185!3d12.957552790865119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e43ecc3adf7%3A0xa0ef3f153468699c!2sVels%20Institute%20of%20Science%2C%20Technology%20%26%20Advanced%20Studies%20(VISTAS)!5e0!3m2!1sen!2sin!4v1676197775661!5m2!1sen!2sin"
+        class="googleMapIframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9463739426736187"
+  crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNK9VVQ10X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-LNK9VVQ10X');
+</script>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
