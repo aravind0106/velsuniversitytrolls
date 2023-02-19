@@ -13,7 +13,7 @@ import { JsonDataService } from '../service/jsondata.service';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
-  private readonly APP_KEY = 'upwf0p6mph8eylo';
+  private readonly APP_KEY = '';
   private readonly REDIRECT_URI = 'https://velsuniversitytrolls.in/semester-result'; // replace with your own redirect URI
 
   private USERNAME = 'vutadmin@gmail.com';

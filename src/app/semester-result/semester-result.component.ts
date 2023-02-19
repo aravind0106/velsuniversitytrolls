@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class SemesterResultComponent implements OnInit {
   token!: string;
 
-  private readonly APP_KEY = 'upwf0p6mph8eylo';
-  private readonly APP_SECRET = 'feb0elx7oj738uv';
+  private readonly APP_KEY = '';
+  private readonly APP_SECRET = '';
   private readonly REDIRECT_URI = 'https://velsuniversitytrolls.in/semester-result'; // replace with your own redirect URI
 
   constructor(private http: HttpClient) {}
