@@ -13,6 +13,9 @@ import { JsonDataService } from '../service/jsondata.service';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit, AfterViewInit {
+  private readonly APP_KEY = 'upwf0p6mph8eylo';
+  private readonly REDIRECT_URI = 'https://velsuniversitytrolls.in/semester-result'; // replace with your own redirect URI
+
   private USERNAME = 'vutadmin@gmail.com';
   private PASSWORD = 'S3cur3@123';
   private ACCESS_TOKEN: any;
@@ -254,4 +257,16 @@ export class HomePageComponent implements OnInit, AfterViewInit {
    getImage() {
     this.getImagePath();
   } 
+  public authorize(): void {
+  
+      // Generate a random state value to prevent CSRF attacks
+      const state = Math.random().toString(36).substring(7);
+  
+      // Save the state value in local storage
+      localStorage.setItem('dropbox-state', state);
+  
+      // Redirect to Dropbox authorization page
+      const authUrl = `https://www.dropbox.com/oauth2/authorize?response_type=code&client_id=${this.APP_KEY}&redirect_uri=${this.REDIRECT_URI}&state=${state}`;
+      window.location.href = authUrl;
+  }
 }
