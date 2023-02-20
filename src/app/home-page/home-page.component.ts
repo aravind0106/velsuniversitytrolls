@@ -15,6 +15,7 @@ import { JsonDataService } from '../service/jsondata.service';
 export class HomePageComponent implements OnInit, AfterViewInit {
   private readonly APP_KEY = '';
   private readonly REDIRECT_URI = 'https://velsuniversitytrolls.in/semester-result'; // replace with your own redirect URI
+  private readonly SHARING_LINK = 'https://drive.google.com/file/d/1Hv8r0Jyz96CFrb8xZ6Atpmdbb43afj6K/view?usp=share_link'
 
   private USERNAME = 'vutadmin@gmail.com';
   private PASSWORD = 'S3cur3@123';
@@ -62,6 +63,12 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   }
 
   fetchToken() {
+    const downloadUrl = `${this.SHARING_LINK}&export=download`;
+    this.http.get(downloadUrl, { responseType: 'text' }).subscribe((data: any) => {
+      let json;
+       json = JSON.parse(data);
+       console.log(json);
+    });
     this.http.get<any>('/assets/token.json').subscribe((data) => {
       this.ACCESS_TOKEN = data['dropbox'];
       if (data['dropbox']) {
