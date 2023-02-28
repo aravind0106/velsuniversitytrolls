@@ -66,14 +66,23 @@ export class HomePageComponent implements OnInit, AfterViewInit {
       this.ACCESS_TOKEN = data['dropbox'];
       if (data['dropbox']) {
       this.getImage();
-      this.loadJsonData();
-      this.setAnimationDuration();
+     // this.loadJsonData();
+      // this.setAnimationDuration();
       }
     });
   }
 
   ngOnInit() {
     this.fetchToken();
+    this.fetchImportantUpdates();
+  }
+  fetchImportantUpdates() {
+    this.http.get<any>('/assets/info.json').subscribe((data) => {
+      if (data) {
+        this.infoDetails = data;
+        this.setInfoMessageAnimation(data);
+      }
+    });
   }
 
   ngOnDestroy(): void {
